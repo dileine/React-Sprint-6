@@ -6,8 +6,12 @@ font-size: 1rem;
 text-align: center;
 border: 0.15rem solid #000;
 border-radius: 2rem;
+
+&.activeScene {
+    background-color:pink;
 }
 `;
+
 
 
 

@@ -1,10 +1,10 @@
 import React from "react";
-import { EscenaText } from "../styled/Styled";
+import { EscenaText } from "./Styled-Escena";
 
 
-export const Escena = ({text}) => {
+export const Escena = ({isActive, text}) => {
    
-    return  <EscenaText className="EscenaText">
+    return    <EscenaText className={isActive ? "activeScene" : ""}>
         <p>{text}</p>
     </EscenaText>
 }

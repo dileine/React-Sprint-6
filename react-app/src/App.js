@@ -1,5 +1,5 @@
 import "./App.css";
-import { Escena } from "./components/Escena";
+import { Escena } from "./components/escena/Escena";
 import { sceneText } from "./data/content";
 
 function App() {

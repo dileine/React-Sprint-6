@@ -35,6 +35,7 @@ function App() {
             <Escena
               key={scene.id}
               text={scene.text}
+              M
               img={scene.img}
               isActive={scene.id === active}
             />

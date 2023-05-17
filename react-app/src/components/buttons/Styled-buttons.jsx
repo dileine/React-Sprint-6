@@ -10,4 +10,5 @@ width: 45%;
 padding: 1rem;
 font-size: 1.5rem;
 border: 0.1 solid #000
+
 `;

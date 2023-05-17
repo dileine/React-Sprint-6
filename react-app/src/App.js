@@ -18,6 +18,8 @@ function App() {
   const next = () =>
     active !== scenes.length && setActive((active) => active + 1);
 
+  const image = scenes[active - 1].img;
+
   return (
     <div className="App">
       {start ? (
@@ -27,7 +29,7 @@ function App() {
         </>
       ) : (
         <>
-          <BackgroundScene />
+          <BackgroundScene img={image} />
           <Buttons previous={previous} next={next} />
           {scenes.map((scene) => (
             <Escena

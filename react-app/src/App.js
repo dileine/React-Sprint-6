@@ -6,10 +6,11 @@ import { Welcome } from "./components/welcome/Welcome";
 import { StyledBackground } from "./components/welcome/Styled-welcome";
 import { scenes } from "./data/content";
 import { useState } from "react";
+import { BackgroundScene } from "./components/escena/Styled-Escena";
 
 function App() {
   const [start, setStart] = useState(true);
-  const [active, setActive] = useState(0);
+  const [active, setActive] = useState(1);
 
   const startScene = () => setStart(false);
 
@@ -26,11 +27,13 @@ function App() {
         </>
       ) : (
         <>
+          <BackgroundScene />
           <Buttons previous={previous} next={next} />
           {scenes.map((scene) => (
             <Escena
               key={scene.id}
               text={scene.text}
+              img={scene.img}
               isActive={scene.id === active}
             />
           ))}

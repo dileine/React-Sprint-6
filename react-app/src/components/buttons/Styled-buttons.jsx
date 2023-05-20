@@ -11,6 +11,4 @@ margin-top: 10px;
 padding: 15px;
 font-size: 2rem;
 border: 0.1 solid #000;
-  }
-
 `;
